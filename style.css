@@ -1,0 +1,813 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@keyframes jumpBones {
+  0% {
+    transform: translateY(0) scaleX(1.01) scaleY(0.99);
+  }
+  50% {
+    transform: translateY(-2%) scaleX(0.99) scaleY(1.01);
+  }
+  100% {
+    transform: translateY(0) scaleX(1.01) scaleY(0.99);
+  }
+}
+
+@keyframes fall-with-wind {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  25% {
+    transform: translate(5px, 3px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-4px, 6px) rotate(-1deg);
+  }
+  75% {
+    transform: translate(6px, 2px) rotate(0.5deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
+@keyframes zoomInOutRev {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.015);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+body {
+  margin: 0;
+  background-color: #f7dcaa;
+  color: #382619;
+  position: relative;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.flex,
+.flex-justify-center,
+.flex-align-center,
+.flex-col,
+.flex-align-end,
+.flex-justify-between,
+.flex-justify-end {
+  display: flex;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-align-end {
+  align-items: end;
+}
+
+.flex-justify-between {
+  justify-content: space-between;
+}
+
+.flex-justify-end {
+  justify-content: end;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.section-title {
+  margin: 0;
+  font-family: "Anton", sans-serif;
+
+  font-weight: 400;
+}
+
+.section-paragraph,
+.footer-paragraph {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.social-nav {
+  gap: 1.04166vw;
+}
+
+.how-to-buy-container,
+.section-title-container,
+.tokenomics-container,
+.footer-container {
+  width: calc(65% + 1.04166vw);
+}
+
+/* ABOUT_SECTION */
+
+.about {
+  padding-top: 20.833vw;
+  position: relative;
+}
+
+.about-container {
+  border: 0.520833vw solid #84583b;
+  background: #f7dcaa;
+  background: linear-gradient(
+    180deg,
+    rgba(247, 220, 170, 1) 51%,
+    rgba(228, 181, 96, 1) 100%
+  );
+  height: fit-content;
+  width: 65%;
+}
+
+.about-title {
+  font-size: 4.6875vw;
+  line-height: 1;
+}
+
+.about-paragraph {
+  font-size: 1.25vw;
+  width: 41.66vw;
+}
+
+.about-image-container {
+  width: 20.833vw;
+  position: relative;
+}
+
+.about-image {
+  width: 36.45833vw;
+  position: absolute;
+  bottom: -0.520833vw;
+  animation: jumpBones 0.7s ease-in-out 0.4s infinite;
+}
+
+.about-text-container {
+  gap: 0.78125vw;
+  padding: 2.0833vw 1.04166vw 1.3020833vw;
+}
+
+.about-bottom {
+  background-color: #84583b;
+  padding: 1.3020833vw 0.520833vw 0.78125vw;
+  position: relative;
+  z-index: 1;
+}
+
+/* How to buy */
+.how-to-buy {
+  padding: 1.04166vw 0;
+  gap: 1.04166vw;
+  position: relative;
+}
+
+.how-to-buy-container {
+  gap: 0.78125vw;
+}
+
+.how-to-buy-section-title,
+.tokenomics-section-title {
+  background-color: #382619;
+  color: white;
+  font-size: 3.020833vw;
+  line-height: 1;
+  padding: 0.65104166vw 2.604166vw;
+  width: fit-content;
+  color: #f0d64e;
+}
+
+.how-to-buy-card {
+  position: relative;
+  border: 0.2604166vw solid #382619;
+  padding-top: 4.166vw;
+  background: #f7dcaa;
+  background: radial-gradient(
+    circle,
+    rgba(228, 181, 96, 1) 0%,
+    rgba(247, 220, 170, 1) 100%
+  );
+}
+
+.how-to-buy-title,
+.how-to-buy-number {
+  font-family: "Anton", sans-serif;
+  background-color: #382619;
+}
+
+.how-to-buy-text {
+  font-family: "Roboto", sans-serif;
+}
+
+.how-to-buy-img {
+  width: 20.833vw;
+  animation: fall-with-wind 6s ease-in-out infinite;
+}
+
+.how-to-buy-title,
+.how-to-buy-text,
+.how-to-buy-number {
+  position: absolute;
+}
+
+.how-to-buy-title {
+  top: 0;
+  left: 0;
+  font-size: 1.666vw;
+  padding: 0.2604166vw 1.04166vw;
+  color: white;
+}
+
+.how-to-buy-number {
+  bottom: 0;
+  padding: 0.78125vw 1.5625vw 0 0.78125vw;
+  font-size: 1.3020833vw;
+  border-top-right-radius: 999px;
+  color: white;
+}
+
+.how-to-buy-text {
+  top: 0;
+  right: 0;
+  width: 6.25vw;
+  font-weight: 600;
+  font-size: 0.9375vw;
+  padding: 0.520833vw;
+}
+
+/*Tokenomics*/
+
+.tokenomics {
+  gap: 1.04166vw;
+  padding: 1.04166vw 0;
+}
+
+.tokenomics-container {
+  height: 10.4166vw;
+}
+
+.tokenomics-background {
+  background-color: #382619;
+  height: 100%;
+  width: calc(100% - 1.04166vw);
+
+  gap: 0.520833vw;
+  display: flex;
+  padding: 0.520833vw;
+}
+
+.tokenomics-background-left,
+.tokenomics-background-right {
+  height: 100%;
+}
+
+.tokenomics-background-left {
+  flex: 0.75;
+  background-color: #f7dcaa;
+  position: relative;
+}
+
+.tokenomics-background-right {
+  background-color: #84583b;
+  background: #84583b;
+  background: linear-gradient(
+    90deg,
+    rgba(132, 88, 59, 1) 49%,
+    rgba(56, 38, 25, 1) 81%
+  );
+  flex: 2;
+  font-family: "Anton", sans-serif;
+  color: #f7dcaa;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.04166vw 0 5.20833vw;
+}
+
+.tokenomics-img {
+  width: 20.833vw;
+  position: absolute;
+  bottom: 0;
+  animation: 0.6s ease-in-out 0s infinite normal none running zoomInOutRev;
+}
+
+.token,
+.copy-btn {
+  width: 100%;
+  height: 50%;
+}
+
+.token {
+  font-size: 1.666vw;
+  display: flex;
+  align-items: center;
+}
+
+.copy-btn {
+  font-size: 3.75vw;
+  background: linear-gradient(to left, #cab342, #f0d64e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  transition: all 0.3s ease;
+}
+
+.copy-btn:hover {
+  transform: scale(1.025);
+}
+
+/*FOOTER*/
+
+footer {
+  gap: 1.04166vw;
+}
+
+.footer-content {
+  width: 65%;
+}
+
+.footer-container {
+  height: 18.229166vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-img img {
+  width: 24.7395833vw;
+  z-index: 1;
+  position: absolute;
+  bottom: -2.604166vw;
+}
+
+.footer-img-tag-1 {
+  left: -7.8125vw;
+  animation: fall-with-wind 6s ease-in-out infinite;
+}
+
+.footer-img-tag-2 {
+  animation: 0.6s ease-in-out 0s infinite normal none running zoomInOutRev;
+}
+
+.footer-img-tag-3 {
+  right: -7.8125vw;
+  animation: fall-with-wind 6s ease-in-out infinite;
+}
+
+.footer-text {
+  gap: 1.3020833vw;
+}
+
+.footer-title {
+  font-family: "Anton", sans-serif;
+  font-size: 2.604166vw;
+}
+
+.footer-paragraph {
+  font-size: 1.145833vw;
+  width: 90%;
+}
+
+.footer-buy {
+  background-color: #84583b;
+  width: fit-content;
+  font-family: "Anton", sans-serif;
+  padding: 0.2604166vw 1.04166vw;
+  font-size: 1.666vw;
+  transition: all 0.3s ease;
+}
+
+.footer-buy:hover {
+  background-color: #382619;
+}
+
+/* Header */
+
+header {
+  background-color: #469745;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-bg-img {
+  background-image: url("imgs/background.png");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+/* SUPRATOR CONTAINER */
+
+.suprator-container {
+  position: relative;
+}
+
+.suprator {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  /* transform: rotate(5deg); */
+  z-index: 12;
+  background-color: #84583b;
+  border: 3px solid #382619;
+  border-left: none;
+  border-right: none;
+  color: #f7dcaa;
+  font-family: "Anton", sans-serif;
+}
+
+.scrolling-text {
+  display: inline-block;
+  font-size: 18px;
+  animation: scroll-left 30s linear infinite;
+}
+
+.scrolling-text span {
+  padding-right: 50px; /* Adjust spacing as needed */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.68027vw 2.721088vw;
+
+  position: relative;
+  z-index: 1;
+}
+
+.brand img {
+  width: 13.60544vw;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1.0204081vw;
+}
+
+.header-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-img img {
+  width: 47.619047vw;
+  position: absolute;
+  bottom: 0;
+}
+
+nav li {
+  background-color: #f7dcaa;
+  width: 3.265306122vw;
+  height: 3.265306122vw;
+  border-radius: 0.68027vw;
+  border: 0.204081632vw solid #382619;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav li:hover {
+  transform: scale(1.025);
+}
+
+@media only screen and (max-width: 1025px) {
+  header {
+    height: 80vh;
+  }
+
+  .header-img img {
+    width: 100vw;
+  }
+
+  .brand img {
+    width: 20vw;
+  }
+
+  nav li {
+    width: 6.5vw;
+    height: 6.5vw;
+    border-radius: 1.2vw;
+    border: 0.5vw solid #382619;
+  }
+
+  .how-to-buy-container,
+  .section-title-container,
+  .tokenomics-container,
+  .footer-container {
+    width: calc(80% + 1.04166vw);
+  }
+
+  .about-container {
+    width: 80%;
+  }
+
+  .about-container-content {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .about-text-container {
+    gap: 3vw;
+    padding: 4vw 1.04166vw 1.3020833vw;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 8vw;
+  }
+
+  .about-paragraph {
+    font-size: 3vw;
+    width: 100%;
+  }
+
+  .about-image-container {
+    width: 100%;
+    height: 42vw;
+  }
+
+  .about-image {
+    width: 46.45833vw;
+    bottom: -0.520833vw;
+  }
+
+  .about-bottom {
+    padding: 1.3020833vw 0.520833vw 0.78125vw;
+  }
+
+  .tokenomics {
+    gap: 4vw;
+    padding: 4vw 0;
+  }
+
+  .tokenomics-background-left {
+    flex: 0.75;
+    background-color: #f7dcaa;
+    position: relative;
+  }
+
+  .tokenomics-container {
+    height: 20vw;
+  }
+
+  .tokenomics-background-right {
+    padding: 0 2vw 0 5vw;
+  }
+
+  .tokenomics-img {
+    width: 27.5vw;
+    left: -5vw;
+  }
+
+  .token {
+    font-size: 3vw;
+  }
+
+  .copy-btn:hover {
+    transform: scale(1.025);
+  }
+
+  .how-to-buy-section-title,
+  .tokenomics-section-title {
+    font-size: 6vw;
+    padding: 1.2vw 5vw;
+  }
+
+  .copy-btn {
+    align-items: center;
+  }
+
+  /* How to buy */
+  .how-to-buy {
+    padding: 0vw 0 4vw;
+    gap: 4vw;
+    position: relative;
+  }
+
+  .how-to-buy-container {
+    gap: 0.78125vw;
+  }
+  .how-to-buy-card {
+    border: 0.5vw solid #382619;
+    padding-top: 6vw;
+  }
+
+  .how-to-buy-img {
+    width: 25vw;
+  }
+
+  .how-to-buy-title,
+  .how-to-buy-text,
+  .how-to-buy-number {
+    position: absolute;
+  }
+
+  .how-to-buy-title {
+    font-size: 3vw;
+    padding: 0.4vw 2vw;
+  }
+
+  .how-to-buy-number {
+    bottom: 0;
+    padding: 0.78125vw 1.5625vw 0 0.78125vw;
+    font-size: 1.3020833vw;
+  }
+
+  .how-to-buy-text {
+    width: 12vw;
+    font-weight: 600;
+    font-size: 1.5vw;
+    padding: 0.520833vw;
+  }
+
+  /*FOOTER*/
+
+  footer {
+    gap: 4vw;
+    padding-bottom: 4vw;
+  }
+
+  .footer-content {
+    width: 80%;
+  }
+
+  .footer-container {
+    height: 18.229166vw;
+  }
+
+  .footer-img img {
+    width: 24.7395833vw;
+    z-index: 1;
+    bottom: -2.604166vw;
+  }
+
+  .footer-img-tag-1 {
+    left: -7.8125vw;
+  }
+
+  .footer-img-tag-2 {
+  }
+
+  .footer-img-tag-3 {
+    right: -7.8125vw;
+  }
+
+  .footer-text {
+    gap: 2vw;
+  }
+
+  .footer-title {
+    font-size: 4vw;
+  }
+
+  .footer-paragraph {
+    font-size: 2vw;
+  }
+
+  .footer-buy {
+    padding: 0.5vw 2vw;
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    height: 77.5vh;
+  }
+
+  .brand img {
+    width: 25vw;
+  }
+
+  nav li {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 1.75vw;
+    border: 0.75vw solid #382619;
+  }
+
+  .how-to-buy-container,
+  .section-title-container,
+  .tokenomics-container,
+  .footer-container {
+    width: calc(90% + 1.04166vw);
+  }
+
+  .about-container {
+    width: 90%;
+  }
+
+  .footer-content {
+    width: 90%;
+    flex-direction: column;
+    gap: 25vw;
+  }
+
+  .footer-title {
+    font-size: 6vw;
+  }
+
+  .footer-paragraph {
+    font-size: 4vw;
+  }
+
+  .footer-buy {
+    padding: 0.75vw 5vw;
+    font-size: 6vw;
+  }
+
+  .footer-img img {
+    width: 50vw;
+  }
+
+  .footer-img-tag-1 {
+    left: 0vw;
+  }
+
+  .footer-img-tag-2 {
+    animation: 0.6s ease-in-out 0s infinite normal none running zoomInOutRev;
+  }
+
+  .footer-img-tag-3 {
+    right: 0vw;
+    animation: fall-with-wind 6s ease-in-out infinite;
+  }
+
+  .how-to-buy-container {
+    flex-direction: column;
+    gap: 4vw;
+  }
+
+  .how-to-buy-img {
+    width: 38vw;
+  }
+
+  .how-to-buy-card {
+    border: 1.5vw solid #382619;
+    padding-top: 20vw;
+    width: 50vw;
+  }
+
+  .how-to-buy-title {
+    font-size: 4vw;
+    padding: 0.8vw 4vw;
+  }
+
+  .how-to-buy-text {
+    width: 18vw;
+    font-size: 3vw;
+  }
+
+  .how-to-buy-number {
+    font-size: 3vw;
+  }
+
+  .footer-container {
+    width: 100%;
+  }
+}
