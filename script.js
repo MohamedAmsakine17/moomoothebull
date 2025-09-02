@@ -1,14 +1,23 @@
 window.addEventListener("load", () => {
   const headerImg = document.getElementById("header-img");
 
-  // First show the static image (already set as default in HTML)
-  headerImg.src = "imgs/header.png";
+  // Preload images
+  const staticImg = new Image();
+  staticImg.src = "imgs/header.png";
 
-  // Then show the gif
-  headerImg.src = "imgs/header.gif";
+  const gifImg = new Image();
+  gifImg.src = "imgs/header.gif";
 
-  // After 2130ms switch back to static image
-  setTimeout(() => {
-    headerImg.src = "imgs/header.png";
-  }, 2130);
+  // Start with the static image
+  headerImg.src = staticImg.src;
+
+  // Swap to gif once it's loaded
+  gifImg.onload = () => {
+    headerImg.src = gifImg.src;
+
+    // After 2130ms, switch back to static image
+    setTimeout(() => {
+      headerImg.src = staticImg.src;
+    }, 2130);
+  };
 });
