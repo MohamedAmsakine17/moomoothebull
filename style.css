@@ -109,7 +109,25 @@ a {
 }
 
 .social-nav {
-  gap: 1.04166vw;
+  gap: 0.5vw;
+  justify-content: end;
+}
+
+.social-list {
+  width: 2vw;
+  transition: all 0.3s ease;
+}
+
+.social-list:hover {
+  transform: scale(1.025);
+}
+
+.social-link {
+  width: 100%;
+}
+
+.social-link img {
+  width: 100%;
 }
 
 .how-to-buy-container,
@@ -509,11 +527,26 @@ nav li {
   transition: all 0.3s ease;
 }
 
+nav li a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav li a img {
+  width: 75%;
+}
+
 nav li:hover {
   transform: scale(1.025);
 }
 
 @media only screen and (max-width: 1025px) {
+  .social-list {
+    width: 5vw;
+  }
+
   header {
     height: 80vh;
   }
@@ -716,6 +749,11 @@ nav li:hover {
 }
 
 @media only screen and (max-width: 600px) {
+  .social-list {
+    width: 6vw;
+    gap: 2vw;
+  }
+
   header {
     height: 77.5vh;
   }
