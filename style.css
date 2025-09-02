@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 @keyframes jumpBones {
   0% {
@@ -455,17 +456,19 @@ header {
   position: relative;
   /* transform: rotate(5deg); */
   z-index: 12;
-  background-color: #84583b;
+  background-color: #694a39;
   border: 3px solid #382619;
   border-left: none;
   border-right: none;
-  color: #f7dcaa;
-  font-family: "Anton", sans-serif;
+  color: #f2ca93;
+  font-family: "Inter", sans-serif;
+  padding: 5px 0;
 }
 
 .scrolling-text {
   display: inline-block;
   font-size: 18px;
+  font-weight: 900;
   animation: scroll-left 30s linear infinite;
 }
 
@@ -493,13 +496,13 @@ nav {
 }
 
 .brand img {
-  width: 13.60544vw;
+  width: 8vw;
 }
 
 nav ul {
   display: flex;
   align-items: center;
-  gap: 1.0204081vw;
+  gap: 0.5vw;
 }
 
 .header-img {
@@ -516,8 +519,8 @@ nav ul {
 
 nav li {
   background-color: #f7dcaa;
-  width: 3.265306122vw;
-  height: 3.265306122vw;
+  width: 2.25vw;
+  height: 2.25vw;
   border-radius: 0.68027vw;
   border: 0.204081632vw solid #382619;
   display: flex;
