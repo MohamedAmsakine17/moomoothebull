@@ -575,6 +575,7 @@ nav li:hover {
   padding: 2.0833vw 0 1.04166vw;
   font-family: "Roboto", sans-serif;
   font-size: 0.9375vw;
+  border-bottom: 5px solid #469745;
 }
 
 @media only screen and (max-width: 1025px) {
