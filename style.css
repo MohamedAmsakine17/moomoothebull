@@ -550,10 +550,10 @@ nav li:hover {
 }
 
 .moomoo-img-title {
-  width: 26.04166vw;
+  width: 32vw;
   position: absolute;
-  top: 0.65vw;
-  left: 20%;
+  top: 5vw;
+  left: 22.5vw;
 }
 
 .wallets {
