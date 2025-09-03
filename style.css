@@ -571,11 +571,14 @@ nav li:hover {
 }
 
 .copyright {
+  margin-top: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
   text-align: center;
-  padding: 2.0833vw 0 1.04166vw;
-  font-family: "Roboto", sans-serif;
+  padding: 1.04166vw 0 1.04166vw;
   font-size: 0.9375vw;
-  border-bottom: 5px solid #469745;
+  background-color: #469745;
+  color: #382619;
 }
 
 @media only screen and (max-width: 1025px) {
