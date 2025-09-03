@@ -146,7 +146,7 @@ a {
 }
 
 .about-container {
-  border: 0.520833vw solid #84583b;
+  border: 0.520833vw solid #469745;
   background: #f7dcaa;
   background: linear-gradient(
     180deg,
@@ -283,7 +283,7 @@ a {
 }
 
 .tokenomics-background {
-  background-color: #382619;
+  background-color: #469745;
   height: 100%;
   width: calc(100% - 1.04166vw);
 
@@ -702,7 +702,7 @@ nav li:hover {
     gap: 0.78125vw;
   }
   .how-to-buy-card {
-    border: 0.5vw solid #382619;
+    border: 0.5vw solid #469745;
     padding-top: 6vw;
   }
 
