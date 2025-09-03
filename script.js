@@ -21,3 +21,22 @@ window.addEventListener("load", () => {
     }, 2130);
   };
 });
+
+const copyBtn = document.getElementById("copy");
+const tokenEl = document.getElementById("token");
+
+copyBtn.addEventListener("click", () => {
+  const token = tokenEl.textContent.trim();
+
+  navigator.clipboard
+    .writeText(token)
+    .then(() => {
+      copyBtn.textContent = "COPIED"; // Feedback to user
+      setTimeout(() => {
+        copyBtn.textContent = "COPY THE TOKEN"; // Reset text after 2s
+      }, 2000);
+    })
+    .catch((err) => {
+      console.error("Failed to copy: ", err);
+    });
+});

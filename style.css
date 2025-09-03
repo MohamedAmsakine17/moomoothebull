@@ -545,6 +545,38 @@ nav li:hover {
   transform: scale(1.025);
 }
 
+.about {
+  position: relative;
+}
+
+.moomoo-img-title {
+  width: 26.04166vw;
+  position: absolute;
+  top: 0.65vw;
+  left: 20%;
+}
+
+.wallets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.520833vw;
+  position: absolute;
+  bottom: 0;
+  right: 0.520833vw;
+}
+
+.wallets img {
+  width: 2.0833vw;
+}
+
+.copyright {
+  text-align: center;
+  padding: 2.0833vw 0 1.04166vw;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9375vw;
+}
+
 @media only screen and (max-width: 1025px) {
   .social-list {
     width: 5vw;
@@ -749,9 +781,35 @@ nav li:hover {
     padding: 0.5vw 2vw;
     font-size: 3vw;
   }
+
+  .moomoo-img-title {
+    width: 30vw;
+    left: auto;
+  }
+
+  .wallets img {
+    width: 3vw;
+  }
+
+  .copyright {
+    font-size: 2vw;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .moomoo-img-title {
+    width: 32vw;
+  }
+
+  .wallets img {
+    width: 5vw;
+  }
+
+  .copyright {
+    font-size: 4vw;
+    padding-bottom: 7.5px;
+  }
+
   .social-list {
     width: 6vw;
     gap: 2vw;
@@ -786,7 +844,7 @@ nav li:hover {
   .footer-content {
     width: 90%;
     flex-direction: column;
-    gap: 25vw;
+    gap: 35vw;
   }
 
   .footer-title {
@@ -799,7 +857,7 @@ nav li:hover {
 
   .footer-buy {
     padding: 0.75vw 5vw;
-    font-size: 6vw;
+    font-size: 5vw;
   }
 
   .footer-img img {
@@ -850,5 +908,9 @@ nav li:hover {
 
   .footer-container {
     width: 100%;
+  }
+
+  .footer-text {
+    gap: 5vw;
   }
 }
